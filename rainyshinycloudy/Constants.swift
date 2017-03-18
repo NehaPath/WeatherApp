@@ -9,6 +9,7 @@
 import Foundation
 
 let BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
+let BASE_URL2 = "http://api.openweathermap.org/data/2.5/forecast?"
 let LATITUDE = "lat="
 let LONGITUDE = "&lon="
 let APP_ID = "&appid="
@@ -16,6 +17,6 @@ let API_Key = "efbe71d523ea9291cd5a640b3510e288"
 
 typealias DownloadComplete = () -> ()
 
-let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)-0.13\(LONGITUDE)123\(APP_ID)\(API_Key)"
+let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)38\(LONGITUDE)-78\(APP_ID)\(API_Key)"
 
- 
+let FORECAST_URL = "\(BASE_URL2)\(LATITUDE)38\(LONGITUDE)-78\(APP_ID)\(API_Key)"
